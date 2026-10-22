@@ -1,0 +1,51 @@
+[16:50:43] generating datasets
+[16:51:11] train (100000, 2, 1024), test (32000, 2, 1024)
+[16:51:11] classical features
+[16:52:49] training CNN on mps
+  epoch   1  loss 1.3399  train 0.3620  val 0.5030  (14.6s)
+  epoch   2  loss 0.8523  train 0.5720  val 0.5483  (12.7s)
+  epoch   3  loss 0.7303  train 0.6261  val 0.6242  (12.7s)
+  epoch   4  loss 0.6929  train 0.6447  val 0.5673  (12.7s)
+  epoch   5  loss 0.6681  train 0.6564  val 0.5815  (12.8s)
+  epoch   6  loss 0.6518  train 0.6651  val 0.5230  (12.8s)
+  epoch   7  loss 0.6361  train 0.6754  val 0.5845  (12.8s)
+  epoch   8  loss 0.6259  train 0.6806  val 0.6198  (12.8s)
+  epoch   9  loss 0.6158  train 0.6855  val 0.6610  (12.8s)
+  epoch  10  loss 0.6067  train 0.6907  val 0.6438  (12.8s)
+  epoch  11  loss 0.5936  train 0.6978  val 0.6139  (12.8s)
+  epoch  12  loss 0.5839  train 0.7062  val 0.6681  (12.8s)
+  epoch  13  loss 0.5717  train 0.7113  val 0.6422  (12.8s)
+  epoch  14  loss 0.5549  train 0.7207  val 0.6528  (12.9s)
+  epoch  15  loss 0.5354  train 0.7314  val 0.6634  (12.7s)
+  epoch  16  loss 0.5161  train 0.7427  val 0.6683  (12.8s)
+  epoch  17  loss 0.4855  train 0.7596  val 0.6659  (12.7s)
+  epoch  18  loss 0.4543  train 0.7776  val 0.6717  (12.7s)
+  epoch  19  loss 0.4200  train 0.7973  val 0.6544  (12.8s)
+  epoch  20  loss 0.3815  train 0.8180  val 0.6529  (12.8s)
+  epoch  21  loss 0.3419  train 0.8400  val 0.6665  (12.8s)
+  epoch  22  loss 0.2973  train 0.8651  val 0.6596  (12.8s)
+  epoch  23  loss 0.2555  train 0.8870  val 0.6559  (12.8s)
+  epoch  24  loss 0.2163  train 0.9079  val 0.6565  (12.8s)
+  epoch  25  loss 0.1790  train 0.9281  val 0.6560  (12.8s)
+  epoch  26  loss 0.1513  train 0.9411  val 0.6534  (12.9s)
+  epoch  27  loss 0.1295  train 0.9527  val 0.6530  (12.9s)
+  epoch  28  loss 0.1153  train 0.9604  val 0.6518  (12.8s)
+  epoch  29  loss 0.1082  train 0.9636  val 0.6514  (13.3s)
+  epoch  30  loss 0.1044  train 0.9654  val 0.6495  (13.6s)
+[16:59:24] E1 accuracy vs SNR
+[16:59:37] E3 channel shift
+[17:00:17] E4 train on AWGN, test on fading
+[17:03:27] E5 frame length
+[17:03:38] E6 data efficiency
+[17:09:01]   n=1000: CNN 0.420
+[17:11:39]   n=4000: CNN 0.617
+[17:13:38]   n=16000: CNN 0.698
+[17:16:31]   n=64000: CNN 0.778
+[17:16:31] E7 unseen modulation (8PSK)
+[17:16:39] E8 compute cost
+[17:16:44] done in 26.0 min
+  CNN (raw I/Q)                @10dB  82.6%   mean 0-20 dB  79.3%
+  MLP on cumulants             @10dB  72.8%   mean 0-20 dB  69.2%
+  Cumulants + QDA              @10dB  73.0%   mean 0-20 dB  61.1%
+  Analytic rule (genie SNR)    @10dB  72.2%   mean 0-20 dB  65.8%
+exit 0

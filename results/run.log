@@ -1,0 +1,61 @@
+[18:23:31] generating datasets
+[18:24:01] train (100000, 2, 1024), test (32000, 2, 1024)
+[18:24:01] classical features
+[18:25:27] training CNN on mps (fresh 100000 frames per epoch)
+  epoch   1  loss 1.3657  train 0.3514  val 0.4785  (26.2s)
+  epoch   2  loss 0.8939  train 0.5499  val 0.5774  (16.9s)
+  epoch   3  loss 0.7445  train 0.6177  val 0.6012  (16.6s)
+  epoch   4  loss 0.7044  train 0.6387  val 0.6442  (16.8s)
+  epoch   5  loss 0.6796  train 0.6500  val 0.6617  (18.8s)
+  epoch   6  loss 0.6646  train 0.6595  val 0.6562  (18.8s)
+  epoch   7  loss 0.6524  train 0.6653  val 0.5733  (21.1s)
+  epoch   8  loss 0.6444  train 0.6695  val 0.6800  (19.1s)
+  epoch   9  loss 0.6375  train 0.6700  val 0.6734  (18.3s)
+  epoch  10  loss 0.6274  train 0.6757  val 0.6086  (17.3s)
+  epoch  11  loss 0.6248  train 0.6780  val 0.5934  (16.5s)
+  epoch  12  loss 0.6184  train 0.6806  val 0.6684  (15.6s)
+  epoch  13  loss 0.6093  train 0.6855  val 0.6312  (17.4s)
+  epoch  14  loss 0.6030  train 0.6880  val 0.6629  (18.2s)
+  epoch  15  loss 0.6016  train 0.6871  val 0.6997  (17.4s)
+  epoch  16  loss 0.5991  train 0.6893  val 0.6244  (18.8s)
+  epoch  17  loss 0.5903  train 0.6936  val 0.7074  (17.5s)
+  epoch  18  loss 0.5894  train 0.6943  val 0.6995  (17.8s)
+  epoch  19  loss 0.5851  train 0.6961  val 0.6969  (16.5s)
+  epoch  20  loss 0.5852  train 0.6962  val 0.7023  (17.9s)
+  epoch  21  loss 0.5796  train 0.6981  val 0.6665  (15.8s)
+  epoch  22  loss 0.5795  train 0.7003  val 0.6951  (20.0s)
+  epoch  23  loss 0.5769  train 0.7001  val 0.6573  (19.3s)
+  epoch  24  loss 0.5748  train 0.6996  val 0.7044  (16.1s)
+  epoch  25  loss 0.5756  train 0.7004  val 0.6819  (18.9s)
+  epoch  26  loss 0.5714  train 0.7036  val 0.7054  (18.0s)
+  epoch  27  loss 0.5698  train 0.7042  val 0.7119  (16.4s)
+  epoch  28  loss 0.5649  train 0.7059  val 0.7147  (15.6s)
+  epoch  29  loss 0.5678  train 0.7041  val 0.7141  (17.7s)
+  epoch  30  loss 0.5654  train 0.7076  val 0.7153  (15.9s)
+  epoch  31  loss 0.5623  train 0.7082  val 0.7179  (19.0s)
+  epoch  32  loss 0.5611  train 0.7073  val 0.7204  (19.6s)
+  epoch  33  loss 0.5579  train 0.7108  val 0.7209  (17.7s)
+  epoch  34  loss 0.5592  train 0.7095  val 0.7156  (19.1s)
+  epoch  35  loss 0.5631  train 0.7062  val 0.7209  (20.2s)
+  epoch  36  loss 0.5568  train 0.7101  val 0.7214  (18.0s)
+  epoch  37  loss 0.5593  train 0.7086  val 0.7222  (16.6s)
+  epoch  38  loss 0.5563  train 0.7120  val 0.7189  (21.0s)
+  epoch  39  loss 0.5547  train 0.7113  val 0.7208  (17.7s)
+  epoch  40  loss 0.5547  train 0.7115  val 0.7206  (19.8s)
+[18:37:47] E1 accuracy vs SNR
+[18:37:57] E3 channel shift
+[18:38:38] E4 train on AWGN, test on fading
+[18:42:06] E5 frame length
+[18:42:16] E6 data efficiency
+[18:47:40]   n=1000: CNN 0.420
+[18:50:20]   n=4000: CNN 0.617
+[18:52:22]   n=16000: CNN 0.698
+[18:55:15]   n=64000: CNN 0.778
+[18:55:15] E7 unseen modulation (8PSK)
+[18:55:23] E8 compute cost
+[18:55:29] done in 32.0 min
+  CNN (raw I/Q)                @10dB  88.0%   mean 0-20 dB  84.8%
+  MLP on cumulants             @10dB  72.8%   mean 0-20 dB  69.2%
+  Cumulants + QDA              @10dB  73.0%   mean 0-20 dB  61.1%
+  Analytic rule (genie SNR)    @10dB  72.2%   mean 0-20 dB  65.8%
+exit 0
